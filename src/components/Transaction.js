@@ -8,6 +8,7 @@ export default function Transaction({ transaction, deleteTransaction, editTransa
       <span>
         <span style={{ marginRight: 8 }}>{transaction.date}</span>
         {sign}${Math.abs(transaction.amount)}
+        <span style={{ marginLeft: 8 }}>Category: {transaction.category}</span> {/* Вывод категории */}
       </span>
       <button
         className="edit-btn"

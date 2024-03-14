@@ -1,25 +1,21 @@
-// Import the action types
-import { ADD_TRANSACTION, DELETE_TRANSACTION, EDIT_TRANSACTION } from "./actions";
-
-// Initial state
+// redux/reducers.js
 const initialState = {
     transactions: []
 };
 
-// Reducer function
 const expenseTrackerReducer = (state = initialState, action) => {
     switch(action.type) {
-        case ADD_TRANSACTION:
+        case 'ADD_TRANSACTION': 
             return {
                 ...state,
                 transactions: [action.payload, ...state.transactions]
             };
-        case DELETE_TRANSACTION:
+        case 'DELETE_TRANSACTION': 
             return {
                 ...state,
                 transactions: state.transactions.filter((transaction) => transaction.id !== action.payload)
             };
-        case EDIT_TRANSACTION: // Добавляем обработку действия редактирования транзакции
+        case 'EDIT_TRANSACTION': 
             return {
                 ...state,
                 transactions: state.transactions.map(transaction =>

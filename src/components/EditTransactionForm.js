@@ -1,3 +1,4 @@
+//EditTransaction.js
 import React, { useState } from "react";
 
 export default function EditTransactionForm({ transaction, editTransactionAction, cancelEdit }) {
@@ -19,7 +20,7 @@ export default function EditTransactionForm({ transaction, editTransactionAction
 
   return (
     <div>
-      <h3>Транзакцияны өзгерту</h3>
+      <h3>Изменить транзакцию</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
           <label>Текст</label>
@@ -48,8 +49,8 @@ export default function EditTransactionForm({ transaction, editTransactionAction
             type="date"
           />
         </div>
-        <button className="bttn">Транзакцияны жаңарту</button>
-        <button className="btttn" onClick={cancelEdit}>Болдырмау</button>
+        <button className="bttn">Обновить транзакцию</button>
+        <button className="btttn" onClick={cancelEdit}>Назад</button>
       </form>
     </div>
   );

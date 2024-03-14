@@ -7,6 +7,7 @@ import TransactionsList from "../components/TransactionsList";
 import IncomeExpense from "../components/IncomeExpense";
 import EditTransactionForm from "../components/EditTransactionForm";
 
+
 export class Main extends Component {
   constructor(props) {
     super(props);

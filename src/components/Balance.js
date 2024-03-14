@@ -1,3 +1,4 @@
+//Balance.js
 import React from "react";
 
 export default function Balance({ transactions }) {
@@ -5,7 +6,7 @@ export default function Balance({ transactions }) {
   const total = amount.reduce((acc, item) => acc + item, 0);
   return (
     <div>
-      <h4>Сіздің балансыңыз</h4>
+      <h4>Ващ баланс</h4>
       <h1>${total}</h1>
     </div>
   );

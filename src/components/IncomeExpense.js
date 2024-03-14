@@ -1,3 +1,4 @@
+//Income.js
 import React from "react";
 
 export default function IncomeExpense({ transactions }) {
@@ -11,11 +12,11 @@ export default function IncomeExpense({ transactions }) {
   return (
     <div className="inc-exp-container">
       <div>
-        <h4>Табыс</h4>
+        <h4>Доход</h4>
         <p className="money plus">+${income}</p>
       </div>
       <div>
-        <h4>Шығын</h4>
+        <h4>Расходы</h4>
         <p className="money minus">${expenses}</p>
       </div>
     </div>
